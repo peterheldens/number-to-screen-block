@@ -13,15 +13,17 @@ input.onButtonPressed(Button.B, function () {
     }
 })
 
-let m = 0
-let dm = 0
-let cm = 0
-basic.clearScreen()
-for (let mm = 0; mm <= 5000; mm++) {
-    cm = convert(mm)
-    dm = convert_mm2dm(mm)
-    m = convert_mm2m(mm)
-    plot(cm - 1, 3)
-    plot(dm - 1, 1)
-    plot(m - 1, 0)
-}
+input.onButtonPressed(Button.AB, function () {
+    let m = 0
+    let dm = 0
+    let cm = 0
+    basic.clearScreen()
+    for (let mm = 0; mm <= 5000; mm++) {
+        cm = screenMagic.convertMMtoCM(mm)
+        dm = screenMagic.convertMMtoDM(mm)
+        m = screenMagic.convertMMtoCM(mm)
+        screenMagic.plotMeter(cm - 1, 3)
+        screenMagic.plotMeter(dm - 1, 1)
+        screenMagic.plotMeter(m - 1, 0)
+    }
+})

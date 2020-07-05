@@ -30,19 +30,19 @@ namespace screenMagic {
     /**
      * Convert mm to cm
      */
-    export function convertMMtoCM (x: number) {
+    export function convertMMtoCM (x: number) : number {
         return Math.idiv(x, 10) % 10
     }
     /**
      * convert mm to m
      */
-    export function convertMMtoM (x: number) {
+    export function convertMMtoM (x: number) : number{
         return Math.idiv(x, 1000) % 10
     }
     /**
      * convert mm to dm
      */
-    export function convert_mm2dm (x: number) {
+    export function convertMMtoDM (x: number) : number {
         return Math.idiv(x, 100) % 10
     }
 }
