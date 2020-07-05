@@ -15,7 +15,7 @@ namespace screenMagic {
      * Plot meters on row 0, dm on row 2,3, cn on row 4,5
      */
     //% blockId=screenMagicPlotMeter
-    //% block="plot at $number $row"
+    //% block="plotMeter $number $row"
     //% index.min=0 index.max=10
     export function plotMeter (num: number, row: number) {
         for (let col = 0; col <= 10; col++) {
