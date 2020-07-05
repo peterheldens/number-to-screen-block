@@ -31,21 +31,21 @@ namespace screenMagic {
      * Convert mm to cm
      */
     //% block
-    export function convertMMtoCM (x: number) : number {
+    export function centimeter (x: number) : number {
         return Math.idiv(x, 10) % 10
     }
     /**
      * convert mm to m
      */
     //% block
-    export function convertMMtoM (x: number) : number {
+    export function meter (x: number) : number {
         return Math.idiv(x, 1000) % 10
     }
     /**
      * convert mm to dm
      */
     //% block
-    export function convertMMtoDM (x: number) : number {
+    export function decimeter (x: number) : number {
         return Math.idiv(x, 100) % 10
     }
 }
