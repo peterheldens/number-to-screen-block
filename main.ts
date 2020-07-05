@@ -14,7 +14,6 @@ namespace screenMagic {
     /**
      * Plot meters on row 0, dm on row 2,3, cn on row 4,5
      */
-    //% bl
     //% blockId=screenMagicPlotMeter
     //% block="plot at $number $row"
     //% index.min=0 index.max=10
@@ -26,6 +25,25 @@ namespace screenMagic {
                 led.unplot(col % 5, row + Math.idiv(col, 5))
             }
         }
+    }
+
+    /**
+     * Convert mm to cm
+     */
+    export function convertMMtoCM (x: number) {
+        return Math.idiv(x, 10) % 10
+    }
+    /**
+     * convert mm to m
+     */
+    export function convertMMtoM (x: number) {
+        return Math.idiv(x, 1000) % 10
+    }
+    /**
+     * convert mm to dm
+     */
+    export function convert_mm2dm (x: number) {
+        return Math.idiv(x, 100) % 10
     }
 }
 
