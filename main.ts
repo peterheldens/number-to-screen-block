@@ -27,6 +27,23 @@ namespace screenMagic {
     }
 
     /**
+     * Convert mm to metric
+     */
+    //% block
+    export function metric (x: number) : string {
+        return (screenMagic.meter(x).toString() + "m" 
+        + screenMagic.decimeter(x).toString() + "dm" 
+        + screenMagic.centimeter(x).toString() + "cm"
+        + screenMagic.milimeter(x).toString() + "mm")
+    }
+       /**
+     * Convert mm to mm
+     */
+    //% block
+    export function milimeter (x: number) : number {
+        return Math.idiv(x, 1) % 10
+    }
+    /**
      * Convert mm to cm
      */
     //% block
