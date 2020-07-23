@@ -1,7 +1,3 @@
-//test 1
-//test 2
-//test 3
-
 namespace screenMagic {
     /**
      * Plot number on LEDs
